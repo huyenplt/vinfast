@@ -89,3 +89,22 @@
 #gallery .gallery-item img {
     height: 100%;
 }
+
+@media(max-width: 992px) {
+    #explore .explore-description {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    #explore .explore-img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 576px) {
+    #gallery .gallery-item {
+        height: unset;
+    }
+}

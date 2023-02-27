@@ -174,14 +174,13 @@
 
 .installment-page {
     margin-top: 84px;
-    max-width: 1600px;
     padding-bottom: 50px;
     padding-top: 50px;
 }
 
 @media(max-width: 991px) {
     .installment-page {
-        margin-top:60px
+        margin-top: 100px
     }
 }
 
@@ -335,7 +334,7 @@
 }
 
 .installment-page .summary hr {
-    border-top: 1px solid #dbe1e3;
+    border-top: 1px solid #808486;
     margin-bottom: 17px
 }
 
@@ -634,4 +633,25 @@
 .select2-search__field::placeholder {
     color: #979797;
     font-weight: 400
+}
+
+/* custom */
+.installment-page .summary .product-img {
+    display: none;
+}
+
+.installment-page .summary #summaryDetails {
+    display: none;
+}
+
+.installment-page .summary.dataLoaded .product-img {
+    display: inline-block;
+}
+
+.installment-page .summary.dataLoaded  #summaryDetails {
+    display: block;
+}
+
+.installment-page .summary.dataLoaded .data-not-load-img {
+    display: none;
 }

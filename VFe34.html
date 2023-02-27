@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/vf.png" />
+    <title>VFe34 - Vinfast Việt Nam</title>
 
     <!-- Mulish font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,38 +48,59 @@
     <!-- header: begin -->
     <section id="header">
       <div class="container">
-        <a href="./trang-chu" class="logo">
-          <img src="./images/logo-vinfast.png" alt="" />
-        </a>
+          <i onclick="toggleMiniMenu()" class="fas fa-bars menu-mini-icon"></i>
+          <a href="./trang-chu.html" class="logo">
+              <img src="./images/logo-vinfast.png" alt="">
+          </a>
 
-        <ul class="navbar">
-          <li class="navbar-item dropdown">
-            <a class="active" href="">Ô tô VinFast</a>
-            <i class="fas fa-angle-down"></i>
-            <div class="submenu-wrap">
-                <ul class="submenu">
-                    <i class="fas fa-sort-up"></i>
-                    <li class="submenu-item"><a class="active" href="">VF e34</a></li>
-                    <li class="submenu-item"><a href="./VF5.html">VF5</a></li>
-                    <li class="submenu-item"><a href="./VF8.html">VF8</a></li>
-                    <li class="submenu-item"><a href="./VF9.html">VF9</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="navbar-item">
-            <a href="./bang-gia.html">Bảng giá</a>
-          </li>
-          <li class="navbar-item"><a href="./lien-he.html">Liên hệ</a></li>
-          <li class="navbar-item"><a href="./tra-gop.html">Trả góp</a></li>
-        </ul>
+          <ul class="navbar">
+              <li class="navbar-item dropdown">
+                  <a class="active" href="">Ô tô VinFast</a>
+                  <i class="fas fa-angle-down active"></i>
+                  <div class="submenu-wrap">
+                      <ul class="submenu">
+                          <i class="fas fa-sort-up"></i>
+                          <li class="submenu-item"><a class="active" href="">VF e34</a></li>
+                          <li class="submenu-item"><a href="./VF5.html">VF5</a></li>
+                          <li class="submenu-item"><a href="./VF8.html">VF8</a></li>
+                          <li class="submenu-item"><a href="./VF9.html">VF9</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="navbar-item"><a href="./bang-gia.html">Bảng giá</a></li>
+              <li class="navbar-item"><a href="./lien-he.html">Liên hệ</a></li>
+              <li class="navbar-item"><a href="./tra-gop.html">Trả góp</a></li>
+          </ul>
 
-        <a class="phone" href="tel:123-456-7890">
-          <i class="fas fa-phone-alt"></i>
-          <span class="phone__number">123-456-7890</span>
-        </a>
+          <a class="phone" href="tel:0929798333">
+              <i class="fas fa-phone-alt"></i>
+              <span class="phone__number">0929-798-333</span>
+          </a>
+
+          <div class="navbar-mini-block">
+              <ul class="navbar-mini">
+                  <svg onclick="toggleMiniMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+                  <li onclick="toggleSubmenu(this)" class="navbar-mini-item dropdown active">
+                      <a class="active">Ô tô VinFast</a>
+                      <i class="fas fa-angle-down"></i>
+                      <i class="fas fa-angle-up"></i>
+                      <ul class="submenu-mini">
+                          <li class="submenu-mini-item active"><a href="">VF e34</a></li>
+                          <li class="submenu-mini-item"><a href="./VF5.html">VF5</a></li>
+                          <li class="submenu-mini-item"><a href="./VF8.html">VF8</a></li>
+                          <li class="submenu-mini-item"><a href="./VF9.html">VF9</a></li>
+                      </ul>
+                  </li>
+                  <li class="navbar-mini-item"><a href="./bang-gia.html">Bảng giá</a></li>
+                  <li class="navbar-mini-item"><a href="./lien-he.html">Liên hệ</a></li>
+                  <li class="navbar-mini-item"><a href="./tra-gop.html">Trả góp</a></li>
+              </ul>
+  
+              <div onclick="toggleMiniMenu()" class="navbar-mini-wrapper"></div>
+          </div>
       </div>
-    </section>
-    <!-- header: end -->
+  </section>
+  <!-- header: end -->
 
     <!-- vfe34-banner: begin -->
     <section id="vfe34-banner">
@@ -136,19 +158,19 @@
           <h2 class="overview__name"><span>VINFAST VF E34</span></h2>
           <h3 class="overview__slogan">DẤU ẤN NGƯỜI DẪN ĐẦU</h3>
           <p class="overview__price">
-            Gía niêm yết: <span>690.000.000 đ</span>
+            Gía niêm yết: <span>710.000.000 đ</span>
           </p>
           <p class="overview__voucher">
             Áp dụng voucher <span>200tr</span> giá chỉ còn<br />
             <span>490.000.000 đ</span>
           </p>
           <div class="overview-action">
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="overview-action__test">
+            <button data-bs-toggle="modal" data-bs-target="#registerModal" class="overview-action__test">
               <span>ĐĂNG KÝ LÁI THỬ</span>
               <i class="fas fa-chevron-right"></i>
             </button>
             <button data-bs-toggle="modal" data-bs-target="#buyModal" class="overview-action__buy">
-              MUA XE
+              <span>MUA XE</span>
               <i class="fas fa-check"></i>
             </button>
           </div>
@@ -426,6 +448,29 @@
     </section>
     <!-- gallery: end -->
 
+    <!-- contact: begin -->
+    <section id="contact-form">
+      <div class="container">
+          <a href="tel:0929798333" class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>Hotline: 0929.798.333</span>
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>ĐẶT LỊCH HẸN</span>
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#buyModal" class="contact-item">
+              <i class="fas fa-cart-plus"></i>
+              <span>ĐĂNG KÝ MUA XE</span>
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#registerModal" class="contact-item">
+              <i class="fas fa-play"></i>
+              <span>ĐĂNG KÝ LÁI THỬ</span>
+          </a>
+      </div>
+  </section>
+  <!-- contact: end -->
+
     <!-- footer: begin -->
     <section id="footer">
       <div class="container">
@@ -436,14 +481,14 @@
               <img class="logo__txt" src="./images/vinfast.png" alt="" />
             </div>
             <div class="footer-socials">
-              <a class="facebook__icon" href="facebook.com">
+              <a class="facebook__icon" href="https://www.facebook.com/VinFastPhamHung?mibextid=LQQJ4d">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                   <path
                     d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
                   />
                 </svg>
               </a>
-              <a class="mail__icon" href="mailto:test@gmail.com">
+              <a class="mail__icon" href="mailto:Nhabui1994@gmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
                     d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
@@ -464,10 +509,10 @@
             <div class="footer-block">
               <h4 class="item-header">Ô tô VinFast</h4>
               <ul class="item-list">
-                <li class="item-list__txt"><a href="">VinFast VF E34</a></li>
-                <li class="item-list__txt"><a href="">VinFast VF 5</a></li>
-                <li class="item-list__txt"><a href="">VinFast VF 8</a></li>
-                <li class="item-list__txt"><a href="">VinFast VF 9</a></li>
+                <li class="item-list__txt"><a href="./VFe34.html">VinFast VF E34</a></li>
+                <li class="item-list__txt"><a href="./VF5.html">VinFast VF 5</a></li>
+                <li class="item-list__txt"><a href="./VF8.html">VinFast VF 8</a></li>
+                <li class="item-list__txt"><a href="./VF9.html">VinFast VF 9</a></li>
               </ul>
             </div>
 
@@ -493,45 +538,47 @@
           </div>
         </div>
         <ul class="footer-navbar">
-          <li class="footer-navbar__item"><a href="">Ôtô VinFast</a></li>
-          <li class="footer-navbar__item"><a href="">Bảng giá</a></li>
-          <li class="footer-navbar__item"><a href="">Liên hệ</a></li>
-          <li class="footer-navbar__item"><a href="">Trả góp</a></li>
+          <li class="footer-navbar__item"><a href="./trang-chu.html">Ôtô VinFast</a></li>
+          <li class="footer-navbar__item"><a href="./bang-gia.html">Bảng giá</a></li>
+          <li class="footer-navbar__item"><a href="./lien-he.html">Liên hệ</a></li>
+          <li class="footer-navbar__item"><a href="./tra-gop.html">Trả góp</a></li>
         </ul>
       </div>
     </section>
     <!-- footer:end -->
 
     <!-- modal dang ky lai thu: begin -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <form id="registerForm" action="">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">ĐĂNG KÝ LÁI THỬ</h1>
+            <h1 class="modal-title fs-5" id="registerModalLabel">ĐĂNG KÝ LÁI THỬ</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form action="/action_page.php">
               <p>Để thuận tiện trong quá trình làm việc, tiết kiệm thời gian & được chăm sóc dịch vụ tốt nhất. Quý khách hãy đăng ký trước tại đây, xin cảm ơn!</p>
               <label for="">Thông tin nguời đăng ký lái thử</label>
-              <input class="form-control" type="text" id="fname" name="firstname" placeholder="Họ và tên..." required>
-              <input class="form-control" type="text" id="lname" name="lastname" placeholder="Số điện thoại..." required>
-              <input class="form-control" type="text" id="cname" name="country" placeholder="Địa chỉ Email..." required>
+              <input class="form-control" type="text" id="registerNname" name="registerNname" placeholder="Họ và tên..." required>
+              <input class="form-control" type="number" id="registerPhone" name="registerPhone" placeholder="Số điện thoại..." required>
+              <input class="form-control" type="email" id="registerEmail" name="registerEmail" placeholder="Địa chỉ Email..." required>
+
               <label for="">Tình trạng Giấy phép lái xe?</label>
-              <select class="form-select" id="car-type" name="car-type">
+              <select class="form-select" id="license" name="license">
                 <option value="type">- Please choose an option  -</option>
-                <option value="australia">Đã có</option>
-                <option value="canada">Chưa có</option>
-                <option value="usa">Đang trong quá trình học</option>
-                <option value="usa">...</option>
+                <option value="1">Đã có</option>
+                <option value="0">Chưa có</option>
+                <option value="2">Đang trong quá trình học</option>
+                <option value="usa">Khác...</option>
               </select>
+
               <label for="">Ghi chú</label>
-              <input class="form-control" type="text" id="cname" name="country" placeholder="Tỉnh, thành phố / Thời gian/ Phiên bản xe..." required>
-          </form>
+              <input class="form-control" type="text" id="registerNote" name="registerNote" placeholder="Tỉnh, thành phố / Thời gian/ Phiên bản xe...">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger">Đăng ký lái thử</button>
+            <button type="submit" class="btn btn-danger">Đăng ký lái thử</button>
           </div>
+        </form>
         </div>
       </div>
     </div>
@@ -541,26 +588,94 @@
     <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="buyModalLabel">ĐĂNG KÝ MUA XE</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="/action_page.php">
-              <p>Để thuận tiện trong quá trình làm việc, tiết kiệm thời gian & được chăm sóc dịch vụ tốt nhất. Quý khách hãy đăng ký trước tại đây, xin cảm ơn!</p>
-              <input class="form-control" type="text" id="fname" name="firstname" placeholder="Họ và tên..." required>
-              <input class="form-control" type="text" id="lname" name="lastname" placeholder="Số điện thoại..." required>
-              <input class="form-control" type="text" id="cname" name="country" placeholder="Địa chỉ Email..." required>
-              <input class="form-control" type="text" id="cname" name="country" placeholder="Ghi chú khác" required>
+          <form id="buyForm" action="">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="buyModalLabel">ĐĂNG KÝ MUA XE</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Để thuận tiện trong quá trình làm việc, tiết kiệm thời gian & được chăm sóc dịch vụ tốt nhất. Quý khách hãy đăng ký trước tại đây, xin cảm ơn!</p>
+                <input class="form-control" type="text" id="buyName" name="buyName" placeholder="Họ và tên..." required>
+                <input class="form-control" type="number" id="buyPhone" name="buyPhone" placeholder="Số điện thoại..." required>
+                <input class="form-control" type="email" id="buyEmail" name="buyEmail" placeholder="Địa chỉ Email..." required>
+                <input class="form-control" type="text" id="buyNote" name="buyNote" placeholder="Ghi chú khác">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-danger">ĐĂNG KÝ NGAY</button>
+            </div>
           </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger">Đăng ký lái thử</button>
-          </div>
         </div>
       </div>
     </div>
     <!-- modal dang ky mua xe: end -->
+
+    <!-- modal dat lich hen: begin -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="bookingForm" action="">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="bookingModalLabel">ĐẶT LỊCH HẸN VỚI CHÚNG TÔI</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Để thuận tiện trong quá trình làm việc, tiết kiệm thời gian & được chăm sóc dịch vụ tốt nhất. Quý khách hãy đăng ký trước tại đây, xin cảm ơn!</p>
+
+                <select class="form-select mt-3" id="license" name="license">
+                  <option value="type">- Bạn muốn đặt lịch hẹn tại địa điểm? -</option>
+                  <option value="0">Showroom của chúng tôi</option>
+                  <option value="1">Tại nhà riêng của bạn</option>
+                  <option value="2">Chỉ đặt lịch hẹn tư vấn trước qua điện thoại</option>
+                </select>
+
+                <label class="mt-3" for="">Nội dung mà bạn muốn làm việc cùng chúng tôi?</label>
+                <div class="booking-check d-flex flex-wrap">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check-0">
+                    <label class="form-check-label" for="check-0">
+                      Tư vấn mua xe
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check-1">
+                    <label class="form-check-label" for="check-1">
+                      Bảo hiểm
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check-2">
+                    <label class="form-check-label" for="check-2">
+                      Bảo dưỡng
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check-3">
+                    <label class="form-check-label" for="check-3">
+                      Trả góp
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check-4">
+                    <label class="form-check-label" for="check-4">
+                      Khác
+                    </label>
+                  </div>
+                </div>
+
+                <input class="form-control mt-3" type="text" id="time" name="time" placeholder="Thời gian cuộc hẹn. . . (Vd: 09h sáng 01/01/2021)" required>
+                <input class="form-control" type="text" id="bookingName" name="bookingName" placeholder="Họ và tên..." required>
+                <input class="form-control" type="number" id="bookingPhone" name="bookingPhone" placeholder="Số điện thoại..." required>
+                <input class="form-control" type="email" id="bookingEmail" name="bookingEmail" placeholder="Địa chỉ Email..." required>
+                <input class="form-control" type="text" id="bookingNote" name="bookingNote" placeholder="Ghi chú yêu cầu khác...">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-danger">ĐẶT LỊCH HẸN</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- modal dat lich hen: end -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./owlcarousel/dist/owl.carousel.min.js"></script>

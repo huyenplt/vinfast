@@ -620,26 +620,99 @@
     transition: all ease-in-out 0.5s;
 }
 
-.modal .modal-header {
-    color:#cb2a1d;
-    font-weight: 700;
+#contact-form {
+    margin-top: 80px;
 }
 
-.modal form {
-    text-align: center;
+@media(max-width: 992px) {
+    #navigation .navigation-left {
+        display: none;
+    }
+
+    #navigation .navigation-right {
+        width: 100%;
+    }
+
+    #overview .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #overview .overview-action {
+        margin-bottom: 32px;
+    }
+
+    #overview .overview-action button {
+        padding: 8px 12px;
+    }
+
+    #overview .overview-action span {
+        font-size: .8em;
+    }
+
+    #overview .overview-right {
+        width: 100%;
+    }
+
+    #gallery .container {
+        flex-wrap: wrap;
+    }
+
+    #gallery .gallery-out {
+        margin-bottom: 30px;
+    }
+
+    #gallery .gallery-in, #gallery .gallery-out {
+        width: 100%;
+    }
 }
 
-.modal form input, .modal form select{
-    margin-bottom: 20px;
+@media(max-width: 768px) {
+    #specification .specification-item {
+        width: 50%;
+    }
+
+    #specification .specification-item:nth-child(3), #specification .specification-item:nth-child(5) {
+        border-left: none;
+    }
+
+    #specification .specification-item:nth-child(3) {
+        border-right: 1px dashed #1f3146;
+    }
+
+    #specification .specification-item:nth-child(4) {
+        border-bottom: 1px dashed #1f3146;
+    }
+
+    #station .station-item {
+        width: 100%;
+    }
+
+    #station .station-item +.station-item {
+        margin-top: 20px;
+    }
 }
 
-.modal form label {
-    margin-bottom: 8px;
+@media(max-width: 576px) {
+    #offer .offer-item {
+        width: 100%;
+    }
+
+    #offer .offer-item--left p, #offer .offer-item--left h5 {
+        text-align: left;
+    }
+
+    #specification .specification-item {
+        width: 100%;
+        padding: 20px 10px 20px 30px;
+    }
+
+    #vfe34-banner2 .content__title {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    #gallery .gallery-item {
+        width: 100%;
+    }
 }
-
-.modal .modal-footer {
-    justify-content: center;
-}
-
-
-

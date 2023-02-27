@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/vf.png" />
+    <title>Trả góp - Vinfast Việt Nam</title>
 
     <!-- Mulish font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,27 +29,19 @@
       crossorigin="anonymous"
     />
 
-    <!-- Carousel -->
-    <link
-      rel="stylesheet"
-      href="./owlcarousel/dist/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./owlcarousel/dist/assets/owl.theme.default.min.css"
-    />
-
     <!-- Custom -->
+    <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/common.css" />
-    <link rel="stylesheet" href="/styles/installment.css" />
     <link rel="stylesheet" href="/styles/installment-cost.css" />
+    <link rel="stylesheet" href="/styles/installment.css" />
   </head>
 
   <body>
     <!-- header: begin -->
     <section id="header">
       <div class="container">
-        <a href="" class="logo">
+        <i onclick="toggleMiniMenu()" class="fas fa-bars menu-mini-icon"></i>
+        <a href="./trang-chu.html" class="logo">
           <img src="./images/logo-vinfast.png" alt="" />
         </a>
 
@@ -71,10 +64,47 @@
           <li class="navbar-item"><a class="active" href="">Trả góp</a></li>
         </ul>
 
-        <a class="phone" href="tel:123-456-7890">
+        <a class="phone" href="tel:0929798333">
           <i class="fas fa-phone-alt"></i>
-          <span class="phone__number">123-456-7890</span>
+          <span class="phone__number">0929-798-333</span>
         </a>
+
+        <div class="navbar-mini-block">
+          <ul class="navbar-mini">
+            <svg
+              onclick="toggleMiniMenu()"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+              />
+            </svg>
+            <li onclick="toggleSubmenu(this)" class="navbar-mini-item dropdown">
+              <a class="active">Ô tô VinFast</a>
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+              <ul class="submenu-mini">
+                <li class="submenu-mini-item">
+                  <a href="./VFe34.html">VF e34</a>
+                </li>
+                <li class="submenu-mini-item"><a href="./VF5.html">VF5</a></li>
+                <li class="submenu-mini-item"><a href="./VF8.html">VF8</a></li>
+                <li class="submenu-mini-item"><a href="./VF9.html">VF9</a></li>
+              </ul>
+            </li>
+            <li class="navbar-mini-item">
+              <a href="./bang-gia.html">Bảng giá</a>
+            </li>
+            <li class="navbar-mini-item">
+              <a href="./lien-he.html">Liên hệ</a>
+            </li>
+            <li class="navbar-mini-item active"><a href="">Trả góp</a></li>
+          </ul>
+
+          <div onclick="toggleMiniMenu()" class="navbar-mini-wrapper"></div>
+        </div>
       </div>
     </section>
     <!-- header: end -->
@@ -90,50 +120,38 @@
       </p>
       <div class="row flex-column-reverse flex-lg-row" data-select2-id="14">
         <section id="summary" class="col-12 col-lg-7 d-lg-block summary">
-          <img
-            src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw21bb66bc/images/installment-cost/Products-Car-VF8.png"
-            alt=""
-            class="product-img"
-            style=""
-          />
-          <div id="summaryDetails" class="pr-0 pr-lg-5" style="display: block">
+          <img src="" alt="" class="product-img" style="" />
+          <img class="data-not-load-img" src="./images/logo-xl.png" alt="" />
+          <div id="summaryDetails" class="pr-0 pr-lg-5">
             <div class="d-flex justify-content-between">
               <p>
                 Giá xe
                 <span data-field="name" class="text-capitalize">VF 8</span>
               </p>
-              <b data-field="price">1.174.450.000 VNĐ</b>
+              <b data-field="price"></b>
             </div>
             <div class="d-flex justify-content-between">
               <p>Trả trước</p>
-              <b data-field="paymentAmount">469.780.000 VNĐ</b>
+              <b data-field="paymentAmount"></b>
             </div>
             <hr />
             <div class="d-flex justify-content-between">
               <p>Số tiền vay</p>
-              <b data-field="loanAmount">704.670.000 VNĐ</b>
+              <b data-field="loanAmount"></b>
             </div>
             <div class="d-flex justify-content-between">
               <p>Lãi suất (%/ năm)</p>
-              <b data-field="interestRate">7,62 %</b>
+              <b data-field="interestRate"></b>
             </div>
             <hr />
             <div class="d-flex justify-content-between">
               <p>Số tiền lãi</p>
-              <b data-field="interestPaymentByCustomer">29.085.254 VNĐ</b>
-            </div>
-            <div id="interestPaymentByVinFast" class="d-none">
-              <div class="d-flex justify-content-between">
-                <p>VinFast hỗ trợ lãi</p>
-                <b class="text-danger" data-field="interestPaymentByVinFast"
-                  >0 VNĐ</b
-                >
-              </div>
+              <b data-field="interestPaymentByCustomer"></b>
             </div>
             <hr />
             <div class="d-flex justify-content-between pb-0 pb-lg-4">
               <p>Tổng tiền Vay &amp; Lãi</p>
-              <h4 data-field="total">733.755.254 VNĐ</h4>
+              <h4 data-field="total"></h4>
             </div>
           </div>
         </section>
@@ -146,6 +164,7 @@
             <div class="group-input pt-4" data-select2-id="12">
               <label class="label">Mẫu xe</label>
               <select
+                onchange="handleChooseCar(this)"
                 id="productList"
                 class="select2 select2-hidden-accessible"
                 data-placeholder="Lựa chọn"
@@ -163,40 +182,16 @@
                 >
                   Lựa chọn
                 </option>
-                <option value="Products-Car-LUX-A" data-select2-id="20">
-                  LUX A2.0
-                </option>
-                <option value="Products-Car-VFE34" data-select2-id="21">
-                  VF E34
-                </option>
-                <option value="Products-Car-VF8" data-select2-id="22">
-                  VF 8
-                </option>
-                <option value="Products-Car-VF9" data-select2-id="23">
-                  VF9
-                </option></select
-              ><span
-                class="select2 select2-container select2-container--default select2-container--below"
-                dir="ltr"
-                data-select2-id="1"
-                style="width: 100%"
-                ><span class="selection"
-                  ><span
-                    class="select2-selection select2-selection--single"
-                    role="combobox"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    tabindex="0"
-                    aria-disabled="false"
-                    aria-labelledby="select2-bankList-container"
-                    ><span class="select2-selection__arrow" role="presentation"
-                      ><b role="presentation"></b></span></span></span
-                ><span class="dropdown-wrapper" aria-hidden="true"></span
-              ></span>
+                <option value="vfe34" data-select2-id="20">VF E34</option>
+                <option value="vf5" data-select2-id="21">VF5</option>
+                <option value="vf8" data-select2-id="22">VF8</option>
+                <option value="vf9" data-select2-id="23">VF9</option>
+              </select>
             </div>
             <div class="group-input" data-select2-id="27">
               <label class="label">Phiên bản</label>
               <select
+                onchange="handleChooseVersion(this)"
                 id="editionList"
                 class="select2 select2-hidden-accessible"
                 data-placeholder="Lựa chọn"
@@ -214,36 +209,12 @@
                 >
                   Lựa chọn
                 </option>
-                <option value="MD11V">Eco</option>
-                <option value="MD12V">Plus</option></select
-              ><span
-                class="select2 select2-container select2-container--default select2-container--below"
-                dir="ltr"
-                data-select2-id="3"
-                style="width: 100%"
-                ><span class="selection"
-                  ><span
-                    class="select2-selection select2-selection--single"
-                    role="combobox"
-                    aria-haspopup="true"
-                    aria-expanded="true"
-                    tabindex="0"
-                    aria-disabled="false"
-                    aria-labelledby="select2-bankList-container"
-                    ><span
-                      class="select2-selection__rendered"
-                      id="select2-editionList-container"
-                      role="textbox"
-                      aria-readonly="true"
-                      ></span
-                    ><span class="select2-selection__arrow" role="presentation"
-                      ><b role="presentation"></b></span></span></span
-                ><span class="dropdown-wrapper" aria-hidden="true"></span
-              ></span>
+              </select>
             </div>
             <div class="group-input include-battery" data-select2-id="33">
               <label class="label">Pin</label>
               <select
+                onchange="handleChoosePin(this)"
                 id="includeBattery"
                 class="select2 select2-hidden-accessible"
                 data-placeholder="Lựa chọn"
@@ -255,58 +226,42 @@
                 <option value="" disabled="" selected="" data-select2-id="6">
                   Pin
                 </option>
-                <option value="buy" data-select2-id="34">Bao gồm Pin</option>
-                <option value="rent" data-select2-id="35">
+                <option value="1" data-select2-id="34">Bao gồm Pin</option>
+                <option value="0" data-select2-id="35">
                   Không bao gồm Pin
-                </option></select
-              ><span
-                class="select2 select2-container select2-container--default select2-container--below"
-                dir="ltr"
-                data-select2-id="5"
-                style="width: 100%"
-                ><span class="selection"
-                  ><span
-                    class="select2-selection select2-selection--single"
-                    role="combobox"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    tabindex="0"
-                    aria-disabled="false"
-                    aria-labelledby="select2-bankList-container"
-                    ><span class="select2-selection__arrow" role="presentation"
-                      ><b role="presentation"></b></span></span></span
-                ><span class="dropdown-wrapper" aria-hidden="true"></span
-              ></span>
+                </option>
+              </select>
             </div>
             <div class="group-input">
               <label class="label">Thời&nbsp;gian&nbsp;vay&nbsp;</label>
               <ul id="term" class="term-year">
-                <li class="active">1</li>
-                <li class="">2</li>
-                <li class="">3</li>
-                <li class="">4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
+                <li data-amount="1">1</li>
+                <li data-amount="2">2</li>
+                <li data-amount="3">3</li>
+                <li data-amount="4">4</li>
+                <li data-amount="5">5</li>
+                <li data-amount="6">6</li>
+                <li data-amount="7">7</li>
+                <li data-amount="8">8</li>
               </ul>
             </div>
             <div class="group-input">
               <label class="label">Số tiền trả trước</label>
               <ul id="paymentAmount" class="term-year">
-                <li data-amount="0.2">10%</li>
-                <li data-amount="0.3" class="">20%</li>
-                <li data-amount="0.4" class="active">30%</li>
-                <li data-amount="0.5" class="">40%</li>
-                <li data-amount="0.6" class="">50%</li>
-                <li data-amount="0.7" class="">60%</li>
-                <li data-amount="0.8" class="">70%</li>
-                <li data-amount="0.9" class="">80%</li>
+                <li data-amount="0.1">10%</li>
+                <li data-amount="0.2">20%</li>
+                <li data-amount="0.3">30%</li>
+                <li data-amount="0.4">40%</li>
+                <li data-amount="0.5">50%</li>
+                <li data-amount="0.6">60%</li>
+                <li data-amount="0.7">70%</li>
+                <li data-amount="0.8">80%</li>
               </ul>
             </div>
             <div class="group-input" data-select2-id="40">
               <label class="label">Ngân&nbsp;hàng</label>
               <select
+                onchange="handleChooseBank(this)"
                 id="bankList"
                 class="select2 select2-hidden-accessible"
                 data-placeholder="Lựa chọn"
@@ -325,153 +280,43 @@
                 >
                   Lựa chọn
                 </option>
-                <option value="0.07" data-bank="WOORIBANK" data-select2-id="41">
-                  Ngân Hàng Woori Bank Việt Nam (WOORIBANK) - 7.00 %/năm
+                <option value="0.105" data-bank="MB BANK" data-select2-id="51">
+                  Ngân Hàng TMCP Quân Đội (MB BANK) - 10.50 %/năm
                 </option>
-                <option
-                  value="0.075"
-                  data-bank="LIENVIETPOSTBANK"
-                  data-select2-id="42"
-                >
-                  Ngân Hàng TMCP Bưu Điện Liên Việt (LIENVIETPOSTBANK) - 7.50
+                <option value="0.095" data-bank="BIDV" data-select2-id="52">
+                  Ngân Hàng TMCP Phát Triển và Đầu Tư Việt Nam (BIDV) - 9.50
                   %/năm
                 </option>
                 <option
-                  value="0.075"
-                  data-bank="PVCOMBANK"
-                  data-select2-id="43"
-                >
-                  Ngân Hàng TMCP Đại Chúng (PVCOMBANK) - 7.50 %/năm
-                </option>
-                <option
-                  value="0.0762"
-                  data-bank="STANDCHART"
-                  data-select2-id="44"
-                >
-                  Ngân Hàng TNHH MTV Standard Chartered (Việt Nam) (STANDCHART)
-                  - 7.62 %/năm
-                </option>
-                <option
-                  value="0.077"
-                  data-bank="VIETINBANK"
-                  data-select2-id="45"
-                >
-                  Ngân Hàng TMCP Công Thương Việt Nam (VIETINBANK) - 7.70 %/năm
-                </option>
-                <option value="0.079" data-bank="SCB" data-select2-id="46">
-                  Ngân Hàng TMCP Sài Gòn (SCB ) - 7.90 %/năm
-                </option>
-                <option
-                  value="0.0795"
-                  data-bank="HONGLEONG BANK"
-                  data-select2-id="47"
-                >
-                  Ngân Hàng Hong Leong Việt Nam (HONGLEONG BANK) - 7.95 %/năm
-                </option>
-                <option
-                  value="0.0799"
-                  data-bank="MSB BANK"
-                  data-select2-id="48"
-                >
-                  Ngân Hàng TMCP Hàng Hải Việt Nam (MSB BANK) - 7.99 %/năm
-                </option>
-                <option value="0.0799" data-bank="HSBC" data-select2-id="49">
-                  Ngân Hàng TNHH MTV HSBC (Việt Nam) (HSBC) - 7.99 %/năm
-                </option>
-                <option value="0.08" data-bank="HD BANK" data-select2-id="50">
-                  Ngân Hàng TMCP Phát Triển Thành Phố Hồ Chí Minh (HD BANK) -
-                  8.00 %/năm
-                </option>
-                <option value="0.0829" data-bank="MB BANK" data-select2-id="51">
-                  Ngân Hàng TMCP Quân Đội (MB BANK) - 8.29 %/năm
-                </option>
-                <option value="0.083" data-bank="BIDV" data-select2-id="52">
-                  Ngân Hàng TMCP Phát Triển và Đầu Tư Việt Nam (BIDV) - 8.30
-                  %/năm
-                </option>
-                <option
-                  value="0.085"
-                  data-bank="SACOMBANK"
-                  data-select2-id="53"
-                >
-                  Ngân Hàng TMCP Sài Gòn Thương Tín (SACOMBANK) - 8.50 %/năm
-                </option>
-                <option value="0.085" data-bank="SEABANK" data-select2-id="54">
-                  Ngân Hàng TMCP Đông Nam Á (SEABANK) - 8.50 %/năm
-                </option>
-                <option
-                  value="0.0875"
+                  value="0.1"
                   data-bank="VIETCOMBANK"
                   data-select2-id="55"
                 >
-                  Ngân Hàng TMCP Ngoại Thương Việt Nam (VIETCOMBANK) - 8.75
+                  Ngân Hàng TMCP Ngoại Thương Việt Nam (VIETCOMBANK) - 10.00
                   %/năm
                 </option>
                 <option
-                  value="0.0879"
+                  value="0.11"
                   data-bank="TECHCOMBANK"
                   data-select2-id="56"
                 >
-                  Ngân Hàng TMCP Kỹ Thương Việt Nam (TCB) - 8.79 %/năm
+                  Ngân Hàng TMCP Kỹ Thương Việt Nam (TECHCOMBANK) - 11.00 %/năm
                 </option>
                 <option
-                  value="0.0889"
+                  value="0.09"
                   data-bank="SHINHANBANK"
                   data-select2-id="57"
                 >
-                  Ngân Hàng TNHH MTV Shinhan Việt Nam (SHINHANBANK) - 8.89 %/năm
+                  Ngân Hàng TNHH MTV Shinhan Việt Nam (SHINHANBANK) - 9.00 %/năm
                 </option>
-                <option value="0.089" data-bank="TP BANK" data-select2-id="58">
-                  Ngân Hàng TMCP Tiên Phong (TP BANK) - 8.90 %/năm
+                <option value="0.12" data-bank="TP BANK" data-select2-id="58">
+                  Ngân Hàng TMCP Tiên Phong (TP BANK) - 12.00 %/năm
                 </option>
-                <option
-                  value="0.0899"
-                  data-bank="VIET&nbsp;CAPITAL BANK"
-                  data-select2-id="59"
-                >
-                  Ngân Hàng TMCP Bản Việt (VIET&nbsp;CAPITAL BANK) - 8.99 %/năm
+                <option value="0.13" data-bank="VPBANK" data-select2-id="62">
+                  Ngân Hàng TMCP Việt Nam Phát Triển Thịnh Vượng (VPBANK) -
+                  13.00 %/năm
                 </option>
-                <option value="0.09" data-bank="EXIMBANK" data-select2-id="60">
-                  Ngân Hàng TMCP Xuất Nhập khẩu Việt Nam (EXIMBANK) - 9.00 %/năm
-                </option>
-                <option value="0.0949" data-bank="OCB" data-select2-id="61">
-                  Ngân Hàng Thương Mại Cổ Phần Phương Đông (OCB) - 9.49 %/năm
-                </option>
-                <option value="0.0949" data-bank="VPBANK" data-select2-id="62">
-                  Ngân Hàng TMCP Việt Nam Phát Triển Thịnh Vượng (VPBANK) - 9.49
-                  %/năm
-                </option>
-                <option
-                  value="0.099"
-                  data-bank="NAM A BANK"
-                  data-select2-id="63"
-                >
-                  Ngân Hàng TMCP Nam Á (NAM A BANK) - 9.90 %/năm
-                </option>
-                <option value="0.099" data-bank="VIB" data-select2-id="64">
-                  Ngân Hàng TMCP Quốc Tế Việt Nam (VIB) - 9.90 %/năm
-                </option>
-                <option value="0.0999" data-bank="UOB" data-select2-id="65">
-                  Ngân Hàng UOB Việt Nam (UOB) - 9.99 %/năm
-                </option></select
-              ><span
-                class="select2 select2-container select2-container--default select2-container--below"
-                dir="ltr"
-                data-select2-id="9"
-                style="width: 100%"
-                ><span class="selection"
-                  ><span
-                    class="select2-selection select2-selection--single"
-                    role="combobox"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    tabindex="0"
-                    aria-disabled="false"
-                    aria-labelledby="select2-bankList-container"
-                    ><span class="select2-selection__arrow" role="presentation"
-                      ><b role="presentation"></b></span></span></span
-                ><span class="dropdown-wrapper" aria-hidden="true"></span
-              ></span>
+              </select>
             </div>
             <div class="group-input">
               <label class="label">Lãi suất</label>
@@ -482,40 +327,13 @@
                   pattern="\d*"
                   inputmode="decimal"
                   step="0.1"
-                  placeholder="7,62 %"
+                  placeholder=""
+                  disabled
                 />
-                <div class="number-spin">
-                  <svg
-                    data-step="0.1"
-                    width="20"
-                    height="15"
-                    viewBox="0 0 12 7"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.98375 6.75L6 2.57446L10.0163 6.75L11.25 5.45822L6 0L0.75 5.45822L1.98375 6.75Z"
-                      fill="#1F2125"
-                    ></path>
-                  </svg>
-                  <svg
-                    data-step="-0.1"
-                    width="20"
-                    height="15"
-                    viewBox="0 0 12 7"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.98375 0.25L6 4.42554L10.0163 0.25L11.25 1.54178L6 7L0.75 1.54178L1.98375 0.25Z"
-                      fill="#1F2125"
-                    ></path>
-                  </svg>
-                </div>
               </div>
             </div>
             <div class="pb-4 d-none d-lg-block">
-              <button class="btn btn-cal" type="input">
+              <button class="btn btn-cal" type="input" data-bs-toggle="modal" data-bs-target="#detailModal">
                 Lịch trả góp chi tiết
               </button>
             </div>
@@ -525,7 +343,7 @@
       <div class="row flex-column-reverse flex-lg-row">
         <div id="notice" class="col-12 col-lg-7"></div>
         <div class="col py-4 d-block d-lg-none">
-          <button class="btn btn-cal" type="input">
+          <button class="btn btn-cal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Lịch trả góp chi tiết
           </button>
         </div>
@@ -533,49 +351,22 @@
       <section id="details" class="details">
         <div
           class="modal fade"
+          id="detailModal"
           tabindex="-1"
           aria-hidden="true"
-          style="display: none"
+          aria-labelledby="detailModalLabel"
         >
-          <div class="modal-dialog" role="document" style="min-width: 1198.4px">
+          <div class="modal-dialog" style="min-width: 1600px;">
             <div class="modal-content">
               <div class="modal-header">
                 <div class="d-flex">
                   <div class="d-lg-flex justify-content-between pr-lg-4 w-100">
-                    <h3>
+                    <h3 id="detailModalLabel">
                       Bảng dự toán chi phí <br class="d-md-none" />trả góp từng
                       tháng
                     </h3>
-                    <a
-                      id="exportSheet"
-                      class="d-flex align-items-center justify-content-start"
-                      href=" #"
-                    >
-                      <svg
-                        width="14"
-                        height="17"
-                        viewBox="0 0 14 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 17H14V15H0V17ZM14 6H10V0H4V6H0L7 13L14 6Z"
-                          fill="#2998DD"
-                        ></path>
-                      </svg>
-                      <span class="export-sheet"
-                        >TẢI LỊCH TRẢ GÓP CHI TIẾT</span
-                      >
-                    </a>
                   </div>
-                  <button
-                    type="button"
-                    class="close align-self-start"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="table-responsive dragscroll">
                   <table class="table table-installment">
@@ -604,7 +395,7 @@
               </div>
               <div class="modal-body" style="height: 493.762px">
                 <div class="table-responsive dragscroll">
-                  <table class="table table-installment">
+                  <table class="table table-installment" id="installmentTable">
                     <tbody>
                       <tr class="d-none">
                         <td data-field="paymentPeriod">Tháng {0}</td>
@@ -615,186 +406,6 @@
                         <td data-field="totalAmount"></td>
                         <td data-field="closingBalance"></td>
                         <td data-field="extraCost"></td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 1</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 2</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 3</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 4</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 5</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 6</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 7</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 8</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 9</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 10</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 11</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
-                      </tr>
-                      <tr class="">
-                        <td data-field="paymentPeriod">Tháng 12</td>
-                        <td data-field="openingBalance">0</td>
-                        <td data-field="principalPayment">0</td>
-                        <td data-field="interestPaymentByCustomer">0</td>
-                        <td
-                          data-field="interestPaymentByVinFast"
-                          class="d-none"
-                        >
-                          0
-                        </td>
-                        <td data-field="totalAmount">0</td>
-                        <td data-field="closingBalance">0</td>
-                        <td data-field="extraCost" class="d-none">0</td>
                       </tr>
                     </tbody>
                   </table>
@@ -817,19 +428,23 @@
               <img class="logo__txt" src="./images/vinfast.png" alt="" />
             </div>
             <div class="footer-socials">
-              <a class="facebook__icon" href="facebook.com">
+              <a
+                class="facebook__icon"
+                href="https://www.facebook.com/VinFastPhamHung?mibextid=LQQJ4d"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                   <path
                     d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
                   />
                 </svg>
               </a>
-              <a class="mail__icon" href="mailto:test@gmail.com">
+              <a class="mail__icon" href="mailto:Nhabui1994@gmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
                     d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
-                  /></svg>
-                </a>
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <div class="footer-right">
@@ -846,10 +461,18 @@
             <div class="footer-block">
               <h4 class="item-header">Ô tô VinFast</h4>
               <ul class="item-list">
-                <li class="item-list__txt"><a href="">VinFast VF E34</a></li>
-                <li class="item-list__txt"><a href="">VinFast VF 5</a></li>
-                <li class="item-list__txt"><a href="">VinFast VF 8</a></li>
-                <li class="item-list__txt"><a href="">VinFast VF 9</a></li>
+                <li class="item-list__txt">
+                  <a href="./VFe34.html">VinFast VF E34</a>
+                </li>
+                <li class="item-list__txt">
+                  <a href="./VF5.html">VinFast VF 5</a>
+                </li>
+                <li class="item-list__txt">
+                  <a href="./VF8.html">VinFast VF 8</a>
+                </li>
+                <li class="item-list__txt">
+                  <a href="./VF9.html">VinFast VF 9</a>
+                </li>
               </ul>
             </div>
 
@@ -875,64 +498,25 @@
           </div>
         </div>
         <ul class="footer-navbar">
-          <li class="footer-navbar__item"><a href="">Ôtô VinFast</a></li>
-          <li class="footer-navbar__item"><a href="">Bảng giá</a></li>
-          <li class="footer-navbar__item"><a href="">Liên hệ</a></li>
-          <li class="footer-navbar__item"><a href="">Trả góp</a></li>
+          <li class="footer-navbar__item">
+            <a href="./trang-chu.html">Ôtô VinFast</a>
+          </li>
+          <li class="footer-navbar__item">
+            <a href="./bang-gia.html">Bảng giá</a>
+          </li>
+          <li class="footer-navbar__item">
+            <a href="./lien-he.html">Liên hệ</a>
+          </li>
+          <li class="footer-navbar__item">
+            <a href="">Trả góp</a>
+          </li>
         </ul>
       </div>
     </section>
     <!-- footer:end -->
 
-    <script>
-      if (window.Profile) {
-        var accountSubmenu = document.querySelector("#mobile-login");
-        if (accountSubmenu) {
-          accountSubmenu.removeAttribute("data-target");
-          accountSubmenu.setAttribute("href", "/vn_vi/thong-tin-ca-nhan");
-          if (document.documentElement.getAttribute("lang") === "en") {
-            accountSubmenu.querySelector(".user-name").innerHTML =
-              window.Profile.firstName + " " + window.Profile.lastName;
-          } else {
-            accountSubmenu.querySelector(".user-name").innerHTML =
-              window.Profile.lastName + " " + window.Profile.firstName;
-          }
-          accountSubmenu.classList.add("logged-in");
-        }
-      }
-
-      document
-        .querySelectorAll("#mega-submenu .submenu-expand")
-        .forEach(function (item) {
-          item.addEventListener("click", function (event) {
-            var activeExpand = document.querySelector(
-              "#mega-submenu .submenu-expand.active-expand"
-            );
-            if (activeExpand) {
-              activeExpand.classList.remove("active-expand");
-            }
-            if (activeExpand !== item) {
-              item.classList.add("active-expand");
-            }
-          });
-        });
-      function login_success() {
-        if (typeof dataLayer === "undefined") return false;
-
-        dataLayer.push({
-          event: "login",
-          user_id: window.Profile.sfscCustomerNo,
-          method: "Vinfast Account",
-        });
-      }
-
-      if (localStorage.getItem("Logged") !== "false" && window.Profile) {
-        login_success();
-        localStorage.setItem("Logged", "false");
-      }
-    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./owlcarousel/dist/owl.carousel.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
