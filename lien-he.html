@@ -152,7 +152,7 @@
                 <h3 class="feeback__ttl">
                     GỬI YÊU CẦU
                 </h3>
-                <form action="/action_page.php">
+                <form id="contactForm" onsubmit="submitContactForm(event)">
                     <input class="form-control" type="text" id="name" name="name" placeholder="Họ và tên.." required>
                     <input class="form-control" type="number" id="phone" name="lastname" placeholder="Số điện thoại.." required>
                     <input class="form-control" type="text" id="address" name="address" placeholder="Tỉnh, Thành Phố..">
@@ -165,14 +165,16 @@
                     </select>
                     <div id="check-payment">
                         <div class="squaredcheck form-check">
-                            <input type="radio" value="None" id="squaredcheck" class="form-check-input" name="check" checked />
+                            <input type="radio" value="Mua trả góp" id="squaredcheck" class="form-check-input" name="check" checked />
                             <label class="form-check-label" for="squaredcheck">Mua trả góp</label>
                         </div>
                         <div class="squaredcheck form-check">
-                            <input type="radio" value="None" id="squaredcheck2" class="form-check-input" name="check"  />
+                            <input type="radio" value="Mua trả thẳng" id="squaredcheck2" class="form-check-input" name="check"  />
                             <label class="form-check-label" for="squaredcheck2">Mua trả thẳng</label>
                         </div>
                     </div>
+                    <p class="noti success" style="color: #cb2a1d; font-weight: 700;"></p>
+
                     <input class="btn btn-dark" type="submit" value="Gửi yêu cầu">
                 </form>
             </div>

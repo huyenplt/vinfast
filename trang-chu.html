@@ -160,7 +160,7 @@
                 <p class="item__description">VinFast ra mắt VF e34, mẫu C-SUV với thiết kế tinh tế, thân thiện với người
                     dùng cùng loạt công nghệ thông minh hiện đại, hứa hẹn nâng tầm trải nghiệm Khách hàng. Thiết kế tăng
                     cường tính khí động học cho khả năng vận hành linh hoạt và tầm nhìn rộng mở.</p>
-                <a href="" class="item__view-details">
+                <a href="./VFe34.html" class="item__view-details">
                     <i class="fa fa-plus"></i>
                     <span>Xem chi tiết</span>
                 </a>
@@ -177,7 +177,7 @@
                     <i class="fa fa-plus"></i>
                     <span>Xem chi tiết</span>
                 </a>
-                <a href=""><img src="./images/vinfast-vf5-2tt-removebg.png" alt="" class="item__img"></a>
+                <a href="./VF5.html"><img src="./images/vinfast-vf5-2tt-removebg.png" alt="" class="item__img"></a>
             </div>
 
             <div class="explore-item explore-item--vf8">
@@ -191,7 +191,7 @@
                     <i class="fa fa-plus"></i>
                     <span>Xem chi tiết</span>
                 </a>
-                <a href=""><img src="./images/VF8.webp" alt="" class="item__img"></a>
+                <a href="./VF8.html"><img src="./images/VF8.webp" alt="" class="item__img"></a>
             </div>
 
             <div class="explore-item explore-item--vf9">
@@ -204,7 +204,7 @@
                     <i class="fa fa-plus"></i>
                     <span>Xem chi tiết</span>
                 </a>
-                <a href=""><img src="./images/VF9.png" alt="" class="item__img"></a>
+                <a href="./VF9.html"><img src="./images/VF9.png" alt="" class="item__img"></a>
             </div>
         </div>
     </section>
@@ -308,13 +308,14 @@
               </ul>
         </div>
     </section>
-    <button onclick="test()">hihihi</buttono>
+    <video controls autoplay>
+        <source src="https://www.youtube.com/watch?v=pnTRhYdDujY" type="video/mp4">
+        <source src="https://www.youtube.com/watch?v=pnTRhYdDujY" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
     <!-- footer:end -->
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -339,7 +340,7 @@
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <form id="registerForm" action="">
+            <form id="registerForm" onsubmit="submitRegisterForm(event)">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="registerModalLabel">ĐĂNG KÝ LÁI THỬ</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -354,10 +355,10 @@
                 <label for="">Tình trạng Giấy phép lái xe?</label>
                 <select class="form-select" id="license" name="license">
                   <option value="type">- Please choose an option  -</option>
-                  <option value="1">Đã có</option>
-                  <option value="0">Chưa có</option>
-                  <option value="2">Đang trong quá trình học</option>
-                  <option value="usa">Khác...</option>
+                  <option value="Đã có Giấy phép lái xe">Đã có</option>
+                  <option value="Chưa có Giấy phép lái xe">Chưa có</option>
+                  <option value="Đang trong quá trình học">Đang trong quá trình học</option>
+                  <option value="Khác">Khác...</option>
                 </select>
   
                 <label for="">Ghi chú</label>
@@ -376,7 +377,7 @@
       <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <form id="buyForm" action="">
+            <form id="buyForm" onsubmit="submitBuyForm(event)">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="buyModalLabel">ĐĂNG KÝ MUA XE</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -401,7 +402,7 @@
       <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <form id="bookingForm" onsubmit="submitBookingFrom(event)">
+            <form id="bookingForm" onsubmit="submitBookingForm(event)">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="bookingModalLabel">ĐẶT LỊCH HẸN VỚI CHÚNG TÔI</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
